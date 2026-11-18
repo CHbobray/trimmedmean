@@ -84,7 +84,7 @@ func resolveTrims(trim []float64) (lower, upper float64, err error) {
 		return 0, 0, fmt.Errorf("%w: got %d", ErrTrimArgCount, len(trim))
 	}
 	for _, p := range []float64{lower, upper} {
-		if !(p >= 0 && p < 0.5) { // also rejects NaN
+		if p < 0 || p >= 0.5 || math.IsNaN(p) {
 			return 0, 0, fmt.Errorf("%w: got %v", ErrTrimOutOfRange, p)
 		}
 	}
