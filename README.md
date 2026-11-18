@@ -123,5 +123,5 @@ the assignment description and the instructor's R bootstrap example. Claude draf
 package design (a generic function with variadic trimming arguments to support both
 symmetric and asymmetric trimming), the code, the unit tests, and this README. It
 generated the expected test values by running R's `mean(x, trim = p)` and checked that
-the Go results match. I reviewed the code and the results. The conversation log is
-included in this repository as `genai-log.md` (or linked here).
+the Go results match. I reviewed the code and the results. The full conversation log is
+available at [https://claude.ai/share/9448bf64-cd2d-49c9-b7c8-85bf1a67f41c](https://claude.ai/share/9448bf64-cd2d-49c9-b7c8-85bf1a67f41c).
